@@ -1,0 +1,1 @@
+# avito-delivery-game-demo
