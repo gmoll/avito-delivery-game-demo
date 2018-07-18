@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>parts</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M60,40 C48.9543,40 40,48.9543 40,60 C24.5,60 13,60 0,60 C0.0001,26.8629 26.8629,0 60,0 C60,16 60,23 60,40 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="parts">
+            <g id="turn_02" transform="scale(2) translate(60,0) rotate(90)">
+                <g id="Page-1-Clipped">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="path-3" fill="#EFE2B9" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
