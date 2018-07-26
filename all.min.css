@@ -306,11 +306,12 @@
     display: none; } }
 
 #game-avito {
+  position: relative;
   overflow: hidden;
   font-family: 'Montserrat';
   font-size: 16px;
   background: #fff2c8;
-  min-width: 320px; }
+  height: 750px; }
   #game-avito * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
@@ -528,8 +529,13 @@
   #game-avito .game-avito-status_delivery-popup {
     margin-top: -5px;
     height: 60px;
-    line-height: 58px;
+    line-height: 58px; }
+  #game-avito .game-avito-status_delivery-popup-text {
     font-size: 16px; } }
+
+@media only screen and (max-width: 380px) {
+  #game-avito .game-avito-status_delivery-popup-text {
+    font-size: 14px; } }
 
 .game-avito-intro-screen {
   top: 150px !important;
@@ -596,7 +602,9 @@
   #game-avito .game-avito-intro-screen_header {
     margin: 162px 0 16px;
     font-weight: bold;
-    font-size: 24px; } }
+    font-size: 24px; }
+  #game-avito .game-avito-intro-screen_start-button {
+    width: 200px; } }
 
 .game-avito-result-screen {
   overflow: hidden; }
@@ -724,10 +732,12 @@
     padding: 0 6px; } }
 
 @media only screen and (max-width: 380px) {
+  #game-avito .game-avito-result-screen_button:not(._repeat) {
+    margin-right: 2px; }
   #game-avito .game-avito-result-screen_button._repeat {
     width: 32px; }
   #game-avito ._leaderboard._long {
-    font-size: 12px;
+    font-size: 11px;
     padding: 0 8px; }
     #game-avito ._leaderboard._long svg {
       margin-right: 1px;
@@ -837,6 +847,16 @@
       #game-avito .game-avito-leaderboard table thead td:nth-child(3) {
         text-align: left; } }
 
+@media only screen and (max-width: 380px) {
+  #game-avito .game-avito-leaderboard {
+    font-size: 12px;
+    padding: 15px 5px 20px 7px; }
+    #game-avito .game-avito-leaderboard table td:nth-child(3) {
+      width: 30px; }
+    #game-avito .game-avito-leaderboard table thead td:nth-child(3) {
+      position: relative;
+      left: -30px; } }
+
 .game-avito-fact {
   top: 110px !important;
   padding: 41px 30px;
@@ -844,18 +864,38 @@
   font-weight: bold;
   line-height: 26px;
   text-align: center; }
+  .game-avito-fact a, .game-avito-fact a:visited {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #dedede; }
 
 .game-avito-fact_level {
   display: inline-block;
-  background: url(images/icon-level-check.svg) left top no-repeat;
-  padding: 10px 0 28px 52px;
+  background: url(images/icon-level.svg) left top no-repeat;
+  padding: 3px 0 28px 39px;
   line-height: 22px; }
+
+.game-avito-fact_check {
+  position: absolute;
+  background: url(images/icon-check.svg) left top no-repeat;
+  width: 22px;
+  height: 17px;
+  top: 35px;
+  left: calc(50% - 40px);
+  opacity: 1.0;
+  -webkit-transition: opacity 250ms ease;
+  -o-transition: opacity 250ms ease;
+  transition: opacity 250ms ease; }
+  .game-avito-fact_check._faded {
+    opacity: 0.0; }
 
 @media only screen and (max-width: 590px) {
   #game-avito .game-avito-fact {
     padding: 31px 30px;
     font-size: 16px;
-    line-height: 23px; } }
+    line-height: 23px; }
+  #game-avito .game-avito-fact_check {
+    top: 25px; } }
 
 .game-avito-login {
   top: 50% !important;
