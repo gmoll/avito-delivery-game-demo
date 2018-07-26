@@ -864,6 +864,10 @@
   font-weight: bold;
   line-height: 26px;
   text-align: center; }
+  .game-avito-fact a, .game-avito-fact a:visited {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #dedede; }
 
 .game-avito-fact_level {
   display: inline-block;
@@ -889,7 +893,9 @@
   #game-avito .game-avito-fact {
     padding: 31px 30px;
     font-size: 16px;
-    line-height: 23px; } }
+    line-height: 23px; }
+  #game-avito .game-avito-fact_check {
+    top: 25px; } }
 
 .game-avito-login {
   top: 50% !important;
