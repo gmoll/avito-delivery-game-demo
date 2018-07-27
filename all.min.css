@@ -330,11 +330,12 @@
   line-height: 74px;
   padding: 0 40px;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   color: #fff;
   border: 8px solid #fff;
-  border-radius: 16px; }
+  border-radius: 16px;
+  cursor: default; }
   .game-avito_town-label._down {
     bottom: 0; }
   .game-avito_town-label::before {
@@ -361,7 +362,7 @@
   transition: opacity 500ms ease; }
   ._game-avito-popup._centered {
     position: absolute;
-    top: 130px;
+    top: 110px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -376,6 +377,7 @@
 
 @media only screen and (max-width: 590px) {
   #game-avito ._game-avito-popup._centered {
+    max-width: 560px;
     top: 50px; } }
 
 .game-avito-status {
@@ -501,7 +503,7 @@
     left: 6px; }
   #game-avito .game-avito-status_tj-logo {
     top: 12px;
-    right: 9px;
+    right: 10px;
     -webkit-transform: scale(0.69);
         -ms-transform: scale(0.69);
             transform: scale(0.69); }
@@ -519,7 +521,7 @@
             transform: translateX(-50%); }
   #game-avito .game-avito-status_lives-counter {
     top: 67px;
-    right: 13px;
+    right: 15px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; } }
@@ -537,7 +539,6 @@
     font-size: 14px; } }
 
 .game-avito-intro-screen {
-  top: 150px !important;
   padding: 0 44px 58px;
   text-align: center; }
 
@@ -596,7 +597,6 @@
 
 @media only screen and (max-width: 590px) {
   #game-avito .game-avito-intro-screen {
-    top: 50px !important;
     padding: 0 30px 38px; }
   #game-avito .game-avito-intro-screen_header {
     margin: 162px 0 16px;
@@ -857,7 +857,6 @@
       left: -30px; } }
 
 .game-avito-fact {
-  top: 110px !important;
   padding: 41px 30px;
   font-size: 18px;
   font-weight: bold;
@@ -882,9 +881,9 @@
   top: 35px;
   left: calc(50% - 40px);
   opacity: 1.0;
-  -webkit-transition: opacity 250ms ease;
-  -o-transition: opacity 250ms ease;
-  transition: opacity 250ms ease; }
+  -webkit-transition: opacity 500ms ease;
+  -o-transition: opacity 500ms ease;
+  transition: opacity 500ms ease; }
   .game-avito-fact_check._faded {
     opacity: 0.0; }
 
@@ -943,3 +942,18 @@
     background: #db4337; }
     .game-avito-login_button._google:hover {
       background: #d33326; }
+
+.game-avito-tutorial-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity 100ms;
+  -o-transition: opacity 100ms;
+  transition: opacity 100ms; }
+  .game-avito-tutorial-layer._visible {
+    opacity: 1; }
