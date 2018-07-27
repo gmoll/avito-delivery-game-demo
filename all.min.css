@@ -387,6 +387,40 @@
   height: 70px;
   z-index: 40;
   text-align: center; }
+  .game-avito-status._down .game-avito-status_avito-logo {
+    -webkit-transform: scale(0.77);
+        -ms-transform: scale(0.77);
+            transform: scale(0.77);
+    top: 12px;
+    left: 6px; }
+  .game-avito-status._down .game-avito-status_tj-logo {
+    top: 12px;
+    right: 10px;
+    -webkit-transform: scale(0.69);
+        -ms-transform: scale(0.69);
+            transform: scale(0.69); }
+  .game-avito-status._down .game-avito-status_cargo-counter {
+    top: 65px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+  .game-avito-status._down .game-avito-status_level-counter {
+    top: 67px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .game-avito-status._down .game-avito-status_lives-counter {
+    top: 67px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+  .game-avito-status._down .game-avito-status_delivery-popup {
+    margin-top: -5px;
+    height: 60px;
+    line-height: 58px; }
+  .game-avito-status._down .game-avito-status_delivery-popup-text {
+    font-size: 16px; }
 
 .game-avito-status_avito-logo {
   position: absolute;
@@ -399,10 +433,7 @@
 .game-avito-status_cargo-counter {
   position: absolute;
   top: 36px;
-  left: 33%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
+  left: 15px; }
 
 .game-avito-status_cargo-counter-text {
   font-size: 18px;
@@ -423,7 +454,7 @@
 .game-avito-status_level-counter {
   position: absolute;
   top: 36px;
-  left: calc(33% + 117px);
+  left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
@@ -443,7 +474,7 @@
 
 .game-avito-status_delivery-popup {
   position: relative;
-  margin-top: -5px;
+  margin-top: 15px;
   display: inline-block;
   height: 66px;
   line-height: 64px;
@@ -472,10 +503,7 @@
 .game-avito-status_lives-counter {
   position: absolute;
   top: 37px;
-  right: 33%;
-  -webkit-transform: translateX(50%);
-      -ms-transform: translateX(50%);
-          transform: translateX(50%); }
+  right: 15px; }
 
 .game-avito-status_life {
   display: inline-block;
@@ -491,47 +519,50 @@
   height: 32px;
   top: 34px;
   right: 32px;
-  background-image: url(images/icon-logo-tj.svg); }
+  background: url(images/icon-logo-vc.svg) no-repeat; }
 
-@media only screen {
-  #game-avito .game-avito-status_avito-logo {
-    -webkit-transform: scale(0.77);
-        -ms-transform: scale(0.77);
-            transform: scale(0.77);
-    top: 12px;
-    left: 6px; }
-  #game-avito .game-avito-status_tj-logo {
-    top: 12px;
-    right: 10px;
-    -webkit-transform: scale(0.69);
-        -ms-transform: scale(0.69);
-            transform: scale(0.69); }
-  #game-avito .game-avito-status_cargo-counter {
-    top: 65px;
-    left: 15px;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none; }
-  #game-avito .game-avito-status_level-counter {
-    top: 67px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%); }
-  #game-avito .game-avito-status_lives-counter {
-    top: 67px;
-    right: 15px;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none; } }
+.game-avito-status_indicators {
+  width: 100%;
+  height: 50px;
+  max-width: 500px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
-@media only screen and (max-width: 590px) {
-  #game-avito .game-avito-status_delivery-popup {
-    margin-top: -5px;
-    height: 60px;
-    line-height: 58px; }
-  #game-avito .game-avito-status_delivery-popup-text {
-    font-size: 16px; } }
+._down .game-avito-status_avito-logo {
+  -webkit-transform: scale(0.77);
+      -ms-transform: scale(0.77);
+          transform: scale(0.77);
+  top: 12px;
+  left: 6px; }
+
+._down .game-avito-status_tj-logo {
+  top: 12px;
+  right: 10px;
+  -webkit-transform: scale(0.69);
+      -ms-transform: scale(0.69);
+          transform: scale(0.69); }
+
+._down .game-avito-status_cargo-counter {
+  top: 65px;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none; }
+
+._down .game-avito-status_level-counter {
+  top: 67px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+._down .game-avito-status_lives-counter {
+  top: 67px;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none; }
 
 @media only screen and (max-width: 380px) {
   #game-avito .game-avito-status_delivery-popup-text {
@@ -858,16 +889,17 @@
 .game-avito-fact {
   padding: 41px 30px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 26px;
   text-align: center; }
   .game-avito-fact a, .game-avito-fact a:visited {
     color: #000;
     text-decoration: none;
-    border-bottom: 2px solid #dedede; }
+    font-weight: bold; }
 
 .game-avito-fact_level {
   display: inline-block;
+  font-weight: bold;
   background: url(images/icon-level.svg) left top no-repeat;
   padding: 3px 0 28px 39px;
   line-height: 22px; }
@@ -895,17 +927,14 @@
     top: 25px; } }
 
 .game-avito-login {
-  top: 50% !important;
-  -webkit-transform: translate(-50%, -50%) !important;
-      -ms-transform: translate(-50%, -50%) !important;
-          transform: translate(-50%, -50%) !important;
+  top: 200px !important;
   max-width: 320px !important;
   padding: 30px 21px; }
 
 .game-avito-login_header {
   font-size: 18px;
   font-weight: bold;
-  margin: 0 9px 18px; }
+  margin: 0 18px 18px 9px; }
 
 .game-avito-login_buttons {
   display: -webkit-box;
@@ -916,8 +945,8 @@
 
 .game-avito-login_button {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 40%;
-          flex: 1 0 40%;
+      -ms-flex: 1 0 42%;
+          flex: 1 0 42%;
   text-align: center;
   height: 36px;
   line-height: 36px;
@@ -950,9 +979,33 @@
   height: 100%;
   z-index: 60;
   pointer-events: none;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 100ms;
   -o-transition: opacity 100ms;
   transition: opacity 100ms; }
-  .game-avito-tutorial-layer._visible {
-    opacity: 1; }
+  .game-avito-tutorial-layer._faded {
+    opacity: 0; }
+  .game-avito-tutorial-layer._hidden {
+    display: none; }
+
+@-webkit-keyframes hand-pulsation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
+
+@keyframes hand-pulsation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); } }
+
+.game-avito-tutorial-layer_hand {
+  position: absolute;
+  background: url(images/hand.svg) top left/contain no-repeat;
+  -webkit-animation: 500ms infinite alternate hand-pulsation;
+          animation: 500ms infinite alternate hand-pulsation; }
