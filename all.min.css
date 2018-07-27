@@ -653,9 +653,13 @@
   position: relative;
   height: 301px;
   width: 100%;
-  background: url(images/background-result.png) right no-repeat;
-  background-size: cover;
   padding: 36px 30px 33px; }
+  .game-avito-result-screen_upper .game-avito-result-screen_buttons {
+    position: absolute;
+    padding: 0 30px;
+    width: 100%;
+    bottom: 32px;
+    left: 0; }
 
 .game-avito-result-screen_cargo-counter-text {
   font-weight: 500; }
@@ -670,12 +674,13 @@
   vertical-align: -2px; }
 
 .game-avito-result-screen_header {
-  margin-top: 54px;
+  margin-top: 25px;
   font-weight: bold;
   font-size: 32px;
-  height: 32px; }
+  line-height: 39px; }
 
 .game-avito-result-screen_description {
+  display: none;
   margin: 12px 130px 28px 0;
   line-height: 24px;
   height: 48px; }
@@ -712,7 +717,7 @@
 
 .game-avito-result-screen_lower {
   width: 100%;
-  padding: 28px 30px 22px; }
+  padding: 28px 30px 30px; }
 
 .game-avito-result-screen_advertise {
   margin: 21px 0;
@@ -732,8 +737,7 @@
   #game-avito .game-avito-result-screen_header {
     margin-top: 27px;
     font-size: 24px;
-    height: 24px;
-    line-height: 20px; }
+    line-height: 28px; }
   #game-avito .game-avito-result-screen_description {
     margin: 9px 25% 26px 0;
     line-height: 22px;
@@ -743,16 +747,19 @@
   #game-avito .game-avito-result-screen_upper {
     height: 234px;
     padding: 26px 20px 23px; }
+    #game-avito .game-avito-result-screen_upper .game-avito-result-screen_buttons {
+      padding: 0 20px;
+      bottom: 22px; }
   #game-avito .game-avito-result-screen_lower {
     width: 100%;
-    padding: 23px 20px 22px; }
+    padding: 23px 20px 20px; }
   #game-avito .game-avito-result-screen_statistics {
     height: 70px; } }
 
 @media only screen and (max-width: 420px) {
   #game-avito .game-avito-result-screen_header {
-    font-size: 20px;
-    line-height: 18px; }
+    font-size: 18px;
+    line-height: 22px; }
   #game-avito .game-avito-result-screen_button {
     padding: 0 6px; }
   #game-avito .game-avito-result-screen_button._repeat {
