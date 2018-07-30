@@ -751,6 +751,10 @@
 
 .game-avito-intro-screen_text {
   line-height: 24px; }
+  .game-avito-intro-screen_text a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #dedede; }
 
 .game-avito-intro-screen_start-button {
   display: inline-block;
