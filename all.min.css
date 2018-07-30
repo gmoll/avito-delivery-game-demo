@@ -1085,7 +1085,8 @@
 .game-avito-login {
   top: 200px !important;
   max-width: 320px !important;
-  padding: 30px 21px; }
+  padding: 30px 21px;
+  z-index: 70 !important; }
 
 .game-avito-login_header {
   font-size: 18px;
