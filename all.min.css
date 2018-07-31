@@ -426,6 +426,9 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
 
+#game-avito_game-screen {
+  pointer-events: none; }
+
 @media only screen and (max-width: 590px) {
   #game-avito {
     font-size: 14px; } }
