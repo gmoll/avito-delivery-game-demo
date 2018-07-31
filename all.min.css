@@ -1184,3 +1184,60 @@
   transition: opacity 100ms ease; }
   .game-avito-pause-layer._faded {
     opacity: 0; }
+
+@-webkit-keyframes game-avito-life-lost-size {
+  0% {
+    width: 31px; }
+  10% {
+    width: 80%;
+    opacity: 0.9; }
+  100% {
+    width: 80%;
+    opacity: -1; } }
+
+@keyframes game-avito-life-lost-size {
+  0% {
+    width: 31px; }
+  10% {
+    width: 80%;
+    opacity: 0.9; }
+  100% {
+    width: 80%;
+    opacity: -1; } }
+
+@-webkit-keyframes game-avito-life-lost-position {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); }
+  10% {
+    -webkit-transform: translate(60%, 5%);
+            transform: translate(60%, 5%);
+    right: 50%; }
+  100% {
+    -webkit-transform: translate(30%, 50%);
+            transform: translate(30%, 50%);
+    right: 50%; } }
+
+@keyframes game-avito-life-lost-position {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%); }
+  10% {
+    -webkit-transform: translate(60%, 5%);
+            transform: translate(60%, 5%);
+    right: 50%; }
+  100% {
+    -webkit-transform: translate(30%, 50%);
+            transform: translate(30%, 50%);
+    right: 50%; } }
+
+.game-avito-life-lost-animation {
+  position: absolute;
+  width: 31px;
+  height: 1000px;
+  background: url(images/icon-life-full.svg) center top/contain no-repeat;
+  top: 0px;
+  right: 0px;
+  -webkit-animation: 2s ease-in 1 game-avito-life-lost-size, 2s linear 1 game-avito-life-lost-position;
+          animation: 2s ease-in 1 game-avito-life-lost-size, 2s linear 1 game-avito-life-lost-position;
+  pointer-events: none; }
